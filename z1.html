@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Тег meta для указания кодировки -->
+    <meta charset="utf-8">
+</head>
+<body>
+<!DOCTYPE HTML>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<div class="buttom"></div>
+   <script>
+        var list = {
+            value: 1,
+            next: {
+                value: 2,
+                next: {
+                    value: 3,
+                    next: {
+                        value: 4,
+                        next: null
+                    }
+                }
+            }
+        };
+
+       function  printReverseList(somelist){
+            i = somelist;
+            arr=[];
+           while(i != null){
+               arr.push(i.value);
+               alert(i.value);
+               i=i.next;
+           }
+           alert(arr.reverse());
+        }
+
+        printReverseList(list);
+    </script>
+</body>
+</html>
+
+</body>
+</html>
